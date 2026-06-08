@@ -1,0 +1,86 @@
+:root {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #1a1a2e;
+  background: #f7f7fb;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+.app h1 { font-size: 22px; margin: 0 0 4px; }
+.app .sub { color: #6b6b80; margin: 0 0 24px; font-size: 14px; }
+
+.tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.tab {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #d8d8e4;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.tab:hover { border-color: #8a7cff; }
+.tab.active { background: #6c5ce7; color: #fff; border-color: #6c5ce7; }
+
+.panel {
+  background: #fff;
+  border: 1px solid #e6e6f0;
+  border-radius: 14px;
+  padding: 24px;
+}
+.panel h3 { margin: 0 0 16px; font-size: 17px; }
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f5;
+}
+.product:last-of-type { border-bottom: none; }
+.product .name { font-weight: 600; }
+.product .price { color: #6b6b80; font-size: 14px; margin-left: 8px; }
+.qty { min-width: 28px; text-align: center; font-variant-numeric: tabular-nums; }
+
+button.btn {
+  border: 1px solid #d8d8e4;
+  background: #fff;
+  border-radius: 8px;
+  width: 32px; height: 32px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button.btn:hover { border-color: #6c5ce7; color: #6c5ce7; }
+
+.summary {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f4f2ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.summary .totals { font-size: 16px; font-weight: 600; }
+.count {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #d8d8e4;
+}
+.count.flat { color: #15b34a; border-color: #9be3b4; }
+.count.climbs { color: #e0245e; border-color: #f3a9c0; }
+
+.clear { margin-top: 12px; font-size: 13px; color: #6b6b80; cursor: pointer; background: none; border: none; text-decoration: underline; }
+.hint { font-size: 13px; color: #6b6b80; margin-top: 16px; line-height: 1.5; }
