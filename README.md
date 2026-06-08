@@ -29,6 +29,7 @@ Then open the local Vite URL in your browser and use the three tabs in the app.
 - `src/zustand/` - Zustand version
 - `src/signals/` - Signals version
 - `src/shared/` - shared data and helpers
+- `presentation/` - PPTX deck, cue sheets, code cues, and audience Q&A
 
 ## What to look for
 
@@ -41,4 +42,4 @@ Watch the render counter in the UI while you click the cart buttons:
 
 - `StrictMode` is intentionally omitted in development so the render counts stay easy to read.
 - The app is designed for a presentation, so the same interaction is repeated across all three approaches.
-
+- Presentation materials live in `presentation/` if you want the talk assets alongside the app source.
